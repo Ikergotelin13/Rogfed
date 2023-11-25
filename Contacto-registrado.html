@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea - Contacto</title>
+    <link rel="stylesheet" href="./CSS/estilos-menu.css">
+    <link rel="stylesheet" href="./CSS/estilos-generales.css">
+    <link rel="stylesheet" href="./CSS/Footer.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="Abrirmenu">Rogfed</h1>
+        <nav class="megamenu">
+            <ul>
+                <li><a href="./Index-registrado.html">Inicio</a></li>
+                <li><a href="./Sobre Nosotros-registrado.html">Sobre nosotros</a></li>
+                <li><a href="./Ficha de producto-registrado.html">Ficha de producto</a></li>
+                <li><a href="./Contacto-registrado.html">Contacto</a></li>
+                <li>Usuario</li>
+                <li id="prueba"><img src="./img/usuario.png" alt="" id="logo-user"></li>
+                <li id="cerrar-sesion"><a href="./Index.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contacto">
+        <div class="container-contacto">
+            <h2 id="titulo-contacto">Ponte en contacto con nosotros</h2>
+            <form>
+                <label for="name" class="campos-registro">Nombre:</label>
+                <input type="text" id="name" class="input-contacto" required>
+                <label for="email" class="campos-registro">Correo Electrónico:</label>
+                <input type="email" id="email" class="input-contacto" required>
+                <label for="message" class="campos-registro">Mensaje:</label>
+                <textarea id="message" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="contactMessage"></p>
+        </div>
+    </main>
+    <footer>
+        <p>2023 &copy; Rogfed</p>
+    </footer>
+    <script src="./JS/Contacto.js"></script>
+</body>
+
+</html>

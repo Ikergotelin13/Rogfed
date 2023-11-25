@@ -1,0 +1,999 @@
+@charset "UTF-8";
+/*ESTILO GENERAL PARA TODAS LAS PÁGINAS*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img#logo-user {
+  width: 20px;
+  height: 20px;
+}
+
+#cerrar-sesion {
+  border: solid rgb(0, 0, 0);
+  background-color: red;
+}
+
+#subtitulo-registrado {
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 30%;
+  font-size: 125%;
+  color: #bfdaf3;
+  padding-bottom: 50%;
+}
+
+@media only screen and (max-width: 425px) {
+  #subtitulo-registrado {
+    font-size: 105%;
+    padding-bottom: 50%;
+  }
+}
+label.espaciado-apartados-registro {
+  padding-bottom: 2.5%;
+}
+
+#titulo-principal-registrado {
+  font-size: 350%;
+  margin-left: 5%;
+  padding-top: 70px;
+  margin-right: 15%;
+  text-align: left;
+  margin-left: 10%;
+  color: #7dafdb;
+}
+
+@media only screen and (max-width: 600px) {
+  #titulo-principal-registrado {
+    width: 45%;
+    margin-left: 10%;
+    margin-right: 25%;
+    font-size: 200%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #titulo-principal-registrado {
+    width: 45%;
+    margin-left: 10%;
+    margin-right: 25%;
+    font-size: 200%;
+    padding-top: 2%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #titulo-principal-registrado {
+    width: 45%;
+    margin-left: 10%;
+    margin-right: 25%;
+    font-size: 150%;
+    padding-top: 2%;
+  }
+}
+/* Estilo del fondo principal */
+main {
+  padding: 20px;
+  padding-right: 0;
+  background: linear-gradient(to bottom, rgba(153, 203, 245, 0.4941176471), rgba(126, 231, 161, 0.925), rgba(142, 204, 255, 0.4941176471));
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0;
+  height: auto;
+}
+
+@media only screen and (max-height: 980px) {
+  main {
+    height: 12%;
+  }
+}
+footer {
+  background: linear-gradient(to bottom, rgba(206, 206, 206, 0.925), rgba(66, 66, 66, 0.925));
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  padding-right: 0;
+}
+
+label {
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+/*PAGINA DE INICIO*/
+/* Estilos para el menú de navegación */
+header {
+  background: linear-gradient(to bottom, #b9ecec, #73bae9);
+  color: #2165be;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  li.enlaces {
+    font-size: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  li.enlaces {
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  li.enlaces {
+    font-size: 50%;
+  }
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#Formulario-registro {
+  height: 450px;
+  width: 90%;
+}
+
+#letra-pequeña {
+  font-size: 70%;
+  text-align: center;
+  margin-left: 12%;
+  max-width: 72%;
+}
+
+@media only screen and (max-width: 580px) {
+  #letra-pequeña {
+    font-size: 65%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  #letra-pequeña {
+    font-size: 60%;
+  }
+}
+h3 {
+  text-align: center;
+}
+
+#titulo-registrate {
+  margin-top: -0.5%;
+}
+
+h5 {
+  text-align: right;
+}
+
+input #Condicipnes {
+  height: 100px;
+}
+
+.Input-registro {
+  width: 65%;
+  height: 4%;
+  align-self: center;
+}
+
+@media only screen and (max-width: 450px) {
+  .Input-registro {
+    width: 50%;
+  }
+}
+::-moz-placeholder {
+  text-align: center;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+  ::-moz-placeholder {
+    font-size: 80%;
+  }
+  ::placeholder {
+    font-size: 80%;
+  }
+}
+#Contenedor-inicio {
+  display: flex;
+  max-width: 950px;
+  margin-left: 5%;
+}
+
+#Condiciones {
+  margin-left: 12%;
+}
+
+#Enlace-login {
+  text-decoration: none;
+}
+
+#subtitulo {
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 30%;
+  font-size: 125%;
+  color: #bfdaf3;
+  margin-bottom: 50%;
+}
+
+h5 form {
+  text-align: center;
+}
+
+#registro {
+  margin-top: 10px;
+  border: black;
+}
+
+#cuenta-ya-hecha {
+  font-size: 100%;
+  margin: 5%;
+}
+
+@media only screen and (max-width: 800px) {
+  #cuenta-ya-hecha {
+    font-size: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #cuenta-ya-hecha {
+    font-size: 70%;
+  }
+}
+div#container-inicio {
+  display: flex;
+  height: 100%;
+  max-height: 1250px;
+}
+
+#imagen {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #ff4d62;
+}
+
+#registrate {
+  width: 40%;
+  text-align: center;
+  background-color: white;
+  display: flex;
+}
+
+#titulo-principal {
+  font-size: 350%;
+  margin-left: 5%;
+  padding-top: 70px;
+  margin-right: 15%;
+  text-align: left;
+  margin-left: 10%;
+  color: #91c4f0;
+}
+
+@media only screen and (max-width: 600px) {
+  #titulo-principal {
+    width: 45%;
+    margin-left: 10%;
+    margin-right: 25%;
+    font-size: 200%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #titulo-principal {
+    width: 45%;
+    margin-left: 10%;
+    margin-right: 25%;
+    font-size: 200%;
+    padding-top: 2%;
+  }
+}
+#main-inicio {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0; /* Elimina el margen */
+  padding: 0;
+  height: 100%;
+}
+
+#main-header {
+  background: linear-gradient(to bottom, #b9ecec, #73bae9);
+  color: #2165be;
+  text-align: center;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+button#boton-registro {
+  width: 70%;
+  align-self: center;
+  height: 3vh;
+  background-color: rgb(253, 226, 226);
+}
+
+@media only screen and (max-width: 380px) {
+  button#boton-registro {
+    font-size: 80%;
+  }
+}
+label#texto-condiciones {
+  color: rgb(53, 51, 153);
+  margin-left: -7%;
+}
+
+@media only screen and (max-width: 640px) {
+  label#texto-condiciones {
+    font-size: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  label#texto-condiciones {
+    font-size: 65%;
+  }
+}
+/*FICHA DE PRODUCTO*/
+/* Estilos para la lista de imágenes */
+.image-list {
+  max-width: 50%;
+  height: auto;
+  display: flex;
+  margin: auto 0;
+}
+
+@media (max-width: 400px) {
+  .image-list {
+    margin-top: 5%;
+  }
+}
+.original-image {
+  width: 6rem; /* Tamaño de la imagen original */
+  height: auto;
+  cursor: pointer;
+  border: solid black;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 100%;
+  margin-left: 1.3rem;
+}
+
+.large-image-container {
+  display: none;
+  position: absolute;
+  top: -120px; /* Ajusta la posición de la imagen grande */
+  left: 0;
+}
+
+.large-image {
+  width: 40%; /* Tamaño de la imagen grande */
+  height: 40%;
+}
+
+@media (max-width: 1400px) {
+  .large-image {
+    height: 28%;
+    width: 28%;
+    padding-right: 19%;
+    padding-top: 2%;
+  }
+}
+@media (max-width: 1340px) {
+  .large-image {
+    height: 29%;
+    width: 29%;
+    padding-right: 25%;
+    padding-top: 6%;
+  }
+}
+@media (max-width: 1150px) {
+  .large-image {
+    height: 24%;
+    width: 24%;
+    padding-right: 35%;
+    padding-top: 8%;
+  }
+}
+@media (max-width: 1120px) {
+  .large-image {
+    height: 27%;
+    width: 27%;
+    padding-right: 35%;
+    padding-top: 11%;
+  }
+}
+@media (max-width: 980px) {
+  .large-image {
+    height: 27%;
+    width: 27%;
+    padding-right: 42%;
+    padding-top: 11%;
+  }
+}
+@media (max-width: 720px) {
+  .large-image {
+    height: 29%;
+    width: 29%;
+    padding-right: 44%;
+    padding-top: 16%;
+  }
+}
+@media (max-width: 610px) {
+  .large-image {
+    height: 31%;
+    width: 31%;
+    padding-right: 43%;
+    padding-top: 20%;
+  }
+}
+@media (max-width: 550px) {
+  .large-image {
+    height: 32%;
+    width: 32%;
+    padding-right: 42%;
+    padding-top: 22%;
+  }
+}
+@media (max-width: 500px) {
+  .large-image {
+    height: 32%;
+    width: 32%;
+    padding-right: 42%;
+    padding-top: 31%;
+  }
+}
+@media (max-width: 430px) {
+  .large-image {
+    height: 33%;
+    width: 33%;
+    padding-right: 40%;
+    padding-top: 45%;
+  }
+}
+@media (max-width: 375px) {
+  .large-image {
+    height: 28%;
+    width: 28%;
+    padding-right: 41%;
+    padding-top: 56%;
+  }
+}
+/* Estilos para el espacio en blanco */
+.space {
+  height: 17.5rem; /* Ajusta la altura del espacio en blanco según tus necesidades */
+  width: 45%;
+  padding: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #fff; /* Color de fondo blanco */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  border: solid black;
+  border-radius: 20px;
+}
+
+@media (max-width: 550px) {
+  .space {
+    margin-top: 1%;
+    height: 27vh;
+  }
+}
+.description {
+  margin-top: 0.4%;
+  width: 50%;
+  text-align: center;
+  height: 80%;
+  margin-right: 10%;
+  background-color: white;
+  border: solid black;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .description {
+    height: 10%;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .description {
+    height: 25%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .description {
+    height: 35%;
+  }
+}
+.description p {
+  text-align: justify;
+  font-size: medium;
+  font-stretch: extra-expanded;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 950px) {
+  .description p {
+    font-size: 95%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .description p {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .description p {
+    font-size: 65%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .description p {
+    font-size: 55%;
+  }
+}
+.Engloba {
+  display: flex;
+  text-align: center;
+  flex-direction: row-reverse;
+}
+
+.container-imagenes {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-left: 4%;
+  margin-top: 2%;
+}
+
+.product-images {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.product-images img {
+  width: 300px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Estilos para la lista de especificaciones técnicas */
+.lista-espe {
+  padding: 10px;
+  margin: 20px;
+  text-align: left;
+  padding-left: 4%;
+}
+
+.lista-espe h2 {
+  font-size: 1.8em;
+  color: #3b5cec;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para información del producto */
+.product-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-info ul li {
+  margin-bottom: 5px;
+}
+
+.especificaciones {
+  list-style-type: none;
+  padding-right: 0;
+  margin: 0;
+}
+
+.especificaciones li {
+  margin: 5px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.spec-label {
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 6px;
+}
+
+/*Estilo para las calificaciones*/
+.reviews {
+  margin-top: 20px;
+}
+
+.review {
+  border: 1px solid #ccc;
+  padding-left: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-style: italic;
+}
+
+.rating-container {
+  display: flex;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.rating-box {
+  width: 30%;
+  height: 15rem;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 380px) {
+  .rating-box {
+    height: 85%;
+    width: 12%;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .rating-box {
+    height: 85%;
+    width: 20%;
+    font-size: 65%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .rating-box {
+    height: 85%;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .rating-box {
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .rating-box {
+    height: 85%;
+  }
+}
+.rating-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 380px) {
+  .rating-text {
+    font-size: 100%;
+  }
+}
+.stars {
+  font-size: 24px;
+  color: gold;
+}
+
+.contenedor-precio {
+  background-color: white;
+  text-align: left;
+  margin-left: 6%;
+  width: 230px;
+  height: 50px;
+  font-size: 200%;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 640px) {
+  .contenedor-precio {
+    width: 25%;
+    height: 25%;
+  }
+}
+@media only screen and (min-width: 1260px) {
+  .contenedor-precio {
+    margin-top: 15%;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .contenedor-precio {
+    margin-top: -0.5%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .contenedor-precio {
+    margin-top: -1%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contenedor-precio {
+    margin-top: -10%;
+  }
+}
+p#precio {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 640px) {
+  p#precio {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  p#precio {
+    font-size: 49%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  p#precio {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  p#precio {
+    font-size: 30%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  p#precio {
+    font-size: 25%;
+  }
+}
+/* Estilos para los container*/
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-left: 4%;
+  margin-top: 2%;
+}
+
+.container h1 {
+  font-size: 2.5em;
+  color: rgb(14, 14, 14);
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 10%;
+}
+
+.container h2 {
+  font-size: 1.8em;
+  color: #3b3eec;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.container p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: left;
+  padding-right: 50px;
+}
+
+/*LOGIN*/
+/* Estilos para contenedor de inicio de sesión */
+#login-fondo {
+  padding-bottom: 12%;
+  padding-top: 3%;
+}
+
+.containerlogin {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  margin-bottom: 2.5%;
+  margin-top: 2%;
+}
+
+@media only screen and (max-width: 640px) {
+  .containerlogin {
+    width: 45%;
+    margin-top: 10%;
+    margin-bottom: 25%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .containerlogin {
+    margin-bottom: 30%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .containerlogin {
+    margin-bottom: 35%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .containerlogin {
+    margin-bottom: 44%;
+  }
+}
+.loginForm, form {
+  display: flex;
+  flex-direction: column;
+}
+
+#message {
+  font-size: 90%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Estilos para el mapa */
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#map-container {
+  text-align: center;
+  margin: 20px auto;
+  width: 50%;
+}
+
+@media (max-width: 500px) {
+  #map-container {
+    width: 75%;
+  }
+}
+iframe {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .image-list {
+    width: 100%;
+  }
+}
+/* Estilos para el pie de página */
+.footerlogin {
+  background: linear-gradient(to bottom, rgba(206, 206, 206, 0.925), rgba(66, 66, 66, 0.925));
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+/*Estilos Contacto*/
+#contacto {
+  padding-bottom: 8.5%;
+  padding-top: 5%;
+}
+
+@media only screen and (max-width: 980px) {
+  #contacto {
+    padding-bottom: 25%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #titulo-contacto {
+    font-size: 95%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .campos-registro {
+    font-size: 85%;
+  }
+}
+.container-contacto {
+  margin: 0 auto;
+  max-width: 350px;
+  width: 40%;
+  border: solid black;
+  border-radius: 15px;
+  border-style: groove;
+  background-color: beige;
+  padding: 15px;
+}
+
+.input-contacto {
+  padding: 5%;
+}
+
+.container-contacto button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  width: 90%;
+  border: solid black;
+  border-radius: 20px;
+  align-self: center;
+}
+
+input {
+  height: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+}
+
+/* Estilos para campos de entrada y botones */
+.containerlogin input, textarea,
+.containerlogin textarea {
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  max-width: 260px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 640px) {
+  .containerlogin input, textarea,
+  .containerlogin textarea {
+    height: 50%;
+  }
+}
+.containerlogin button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 300px;
+  border-radius: 300px;
+  border: solid black;
+}
+
+@media only screen and (max-width: 640px) {
+  .containerlogin button {
+    width: 95%;
+  }
+}
+button:hover,
+.containerlogin button:hover {
+  background-color: #0056b3;
+}
+
+.boton-login {
+  width: 500px;
+}
+
+.checkbox {
+  display: flex;
+}
+
+#Recordar-contraseña {
+  margin-left: 12%;
+}
+
+#Login {
+  display: flex;
+}
+
+@media only screen and (max-width: 650px) {
+  #Login {
+    font-size: 85%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #Login {
+    font-size: 75%;
+  }
+} /*# sourceMappingURL=estilos-generales.css.map */

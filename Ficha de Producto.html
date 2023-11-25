@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+    <link rel="stylesheet" href="./CSS/estilos-generales.css">
+</head>
+
+<body onload="showDefaultLargeImage()">
+    <header>
+        <h1 id="Abrirmenu">Rogfed</h1>
+        <nav class="megamenu">
+            <ul>
+                <li><a href="./Index.html">Inicio</a></li>
+                <li><a href="./Sobre Nosotros.html">Sobre nosotros</a></li>
+                <li><a href="./Ficha de Producto.html">Ficha de producto</a></li>
+                <li><a href="./Contacto.html">Contacto</a></li>
+                <li><a href="./Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 id="titulo" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">ASUS
+                TUF Gaming F15 FX506HF-HN004 Intel Core i5-11400H/16GB/512GB SSD/RTX 2050/15.6"
+            </h1>
+            <div class="Engloba">
+                <div class="description">
+                    <h2>Descripción</h2>
+                    <p>Diseñado para juegos serios y con un estilo nuevo y elegante, TUF Gaming F15 es un portátil para
+                        juegos repleto de funciones con el poder de llevarte a la victoria. Con tarjeta gráfica hasta
+                        GeForce RTX™ ofrece un juego fluido en una pantalla de 144 Hz, mientras que la potente CPU
+                        Intel® Core ™ i5-11400H se ve reforzada por una refrigeración mejorada que amplifica el
+                        rendimiento de la CPU y mantiene la acústica sigilosa. Una batería de 48 Wh de larga duración
+                        junto con la durabilidad de grado militar de TUF te mantiene en tu mejor juego en cualquier
+                        lugar.</p>
+                </div>
+                <div class="space"></div>
+            </div>
+
+            <div class="contenedor-precio">
+                <p id="precio">Precio:850,99€</p>
+            </div>
+
+
+
+            <div class="container-imagenes">
+                <div class="image-list">
+                    <div id="image-container-1" onmouseover="showLargeImage(1, 0, 0, 2)" onmouseout="hideLargeImage(1)">
+                        <img src="./img/Vista-Frontal.png" alt="Imagen 1" class="original-image">
+                        <div id="large-image-container-1" class="large-image-container">
+                            <img src="./img/Vista-Frontal.png" alt="Imagen grande 1" class="large-image">
+                        </div>
+                    </div>
+                    <div id="image-container-2" onmouseover="showLargeImage(2, 0, 0, 2)" onmouseout="hideLargeImage(2)">
+                        <img src="./img/Vista-Frontal-2.png" alt="Imagen 2" class="original-image">
+                        <div id="large-image-container-2" class="large-image-container">
+                            <img src="./img/Vista-Frontal-2.png" alt="Imagen grande 2" class="large-image">
+                        </div>
+                    </div>
+                    <div id="image-container-3" onmouseover="showLargeImage(3, 0, 0, 2)" onmouseout="hideLargeImage(3)">
+                        <img src="./img/Vista-Lateral.png" alt="Imagen 3" class="original-image">
+                        <div id="large-image-container-3" class="large-image-container">
+                            <img src="./img/Vista-Lateral.png" alt="Imagen grande 3" class="large-image">
+                        </div>
+                    </div>
+                    <div id="image-container-4" onmouseover="showLargeImage(4, 0, 0, 2)" onmouseout="hideLargeImage(4)">
+                        <img src="./img/Vista-Trasera.png" alt="Imagen 4" class="original-image">
+                        <div id="large-image-container-4" class="large-image-container">
+                            <img src="./img/Vista-Trasera.png" alt="Imagen grande 4" class="large-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="product-info">
+                <div class="lista-espe">
+                    <h2>Especificaciones Técnicas</h2>
+                    <ul class="especificaciones">
+                        <li><span class="spec-label">Procesador:</span> Alder Lake i7-12650H</li>
+                        <li><span class="spec-label">Memoria RAM:</span> DDR IV 8GB*2 (3200MHz)</li>
+                        <li><span class="spec-label">Almacenamiento:</span> 1TB NVMe PCIe SSD Gen4x4 w/o DRAM</li>
+                        <li><span class="spec-label">Unidad Óptica:</span> No dispone</li>
+                        <li><span class="spec-label">Tarjeta Gráfica:</span> RTX 3050 4GB, GDDR6 4GB</li>
+                        <li><span class="spec-label">Webcam:</span> HD type (30fps@720p)</li>
+                        <li><span class="spec-label">Batería:</span> 3-Cell, Li-Polymer, 51Whr</li>
+                        <li><span class="spec-label">Sistema Operativo:</span> FreeDOS (SIN SISTEMA OPERATIVO)</li>
+                        <li><span class="spec-label">Tamaño:</span> 15 pulgadas</li>
+                        <li><span class="spec-label">Peso:</span> 2.3KG</li>
+                        <li><span class="spec-label">Materiales:</span> Acero del bueno</li>
+                    </ul>
+                </div>
+
+                <div class="rating-container">
+                    <div class="rating-box">
+                        <p class="rating-text">Alejandro Sanchez Rodriguez</p>
+                        <p>Muy buen ordenador y a un precio genial, lo recomiendo,espero que en un futuro no me de
+                            problemas</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="rating-box">
+                        <p class="rating-text">Vicente Fernandez Barrionuevo</p>
+                        <p>Gran portátil, lo compré para mi hija que lo utiliza para animación 3D y le va perfecto.
+                            Estéticamente es muy chulo.</p>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                    <div class="rating-box">
+                        <p class="rating-text">Celia Fuertes Sanchidrian</p>
+                        <p>Ordenador para gaming, buena relación calidad-precio, teclado cómodo... En general buen
+                            portátil</p>
+                        <div class="stars">★★★☆☆</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2023 &copy; Rogfed</p>
+    </footer>
+    <script src="./JS/JS.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+    <link rel="stylesheet" href="./CSS/estilos-menu.css">
+    <link rel="stylesheet" href="./CSS/estilos-generales.css">
+    <link rel="stylesheet" href="./CSS/Footer.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="Abrirmenu">Rogfed</h1>
+        <nav class="megamenu">
+            <ul>
+                <li><a href="./Index-registrado.html">Inicio</a></li>
+                <li><a href="./Sobre Nosotros-registrado.html">Sobre nosotros</a></li>
+                <li><a href="./Ficha de producto-registrado.html">Ficha de producto</a></li>
+                <li><a href="./Contacto-registrado.html">Contacto</a></li>
+                <li>Usuario</li>
+                <li id="prueba"><img src="./img/usuario.png" alt="" id="logo-user"></li>
+                <li id="cerrar-sesion"><a href="./Index.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="containerlogin">
+            <h2>Iniciar sesión</h2>
+            <form id="loginForm">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" required>
+                <br>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+                <div id="Login">
+                <label for="checkbox"></label>
+                    <input type="checkbox" name="" id="Recordar-contraseña">
+                   Recordar Contraseña
+                </div>
+                <button type="submit" id="boton-login">Iniciar sesión</button>
+            </form>
+            <p id="message"></p>
+        </div>
+    </main>
+    <footer id="footerlogin">
+        <p>2023 &copy; Rogfed</p>
+    </footer>
+    <script src="./JS/JS.js"></script>
+</body>
+
+</html>
