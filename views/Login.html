@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda en Línea</title>
-    <link rel="stylesheet" href="./CSS/estilos-menu.css">
-    <link rel="stylesheet" href="./CSS/estilos-generales.css">
-    <link rel="stylesheet" href="./CSS/Footer.css">
+    <link rel="stylesheet" href="../static/CSS/estilos-generales.css">
 </head>
 
 <body>
@@ -15,7 +13,7 @@
         <h1 id="Abrirmenu">Rogfed</h1>
         <nav class="megamenu">
             <ul>
-                <li><a href="./Index.html">Inicio</a></li>
+                <li><a href="../Index.html">Inicio</a></li>
                 <li><a href="./Sobre Nosotros.html">Sobre nosotros</a></li>
                 <li><a href="./Ficha de Producto.html">Ficha de producto</a></li>
                 <li><a href="./Contacto.html">Contacto</a></li>
@@ -45,7 +43,22 @@
     <footer id="footerlogin">
         <p>2023 &copy; Rogfed</p>
     </footer>
-    <script src="./JS/JS.js"></script>
+    <script src="../static/JS/JS.js"></script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Verifica si hay un mensaje en localStorage
+            var mensajeRegistro = localStorage.getItem('mensajeRegistro');
+
+            // Muestra el mensaje
+            if (mensajeRegistro) {
+                // Puedes mostrar el mensaje en algún elemento en tu página
+                document.getElementById('message').textContent = mensajeRegistro;
+
+                // Elimina el mensaje de localStorage para que no se muestre nuevamente en futuras visitas
+                localStorage.removeItem('mensajeRegistro');
+            }
+        });
+    </script>
 </body>
 
 </html>

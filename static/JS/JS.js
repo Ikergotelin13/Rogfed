@@ -15,23 +15,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/*Boton registro*/
- function redireccionar(){
-    window.location.href = "./Login.html";
- }
 
-     // Redirigir a la página de login
- function redireccionar() {
-    localStorage.setItem('mensaje', 'Ya puedes iniciar sesión');
-    window.location.href = './Login.html';
+
+
+/*Validar el formulario y redireccionar*/
+
+function validarFormulario(event) {
+    event.preventDefault();
+    redireccionarRegistro();
+    return true;
 }
 
- var mensaje = localStorage.getItem('mensaje');
- if (mensaje) {
-     document.getElementById('message').textContent = mensaje;
-     localStorage.removeItem('mensaje');
- }
-
+function redireccionarRegistro() {
+    
+    setTimeout(function() {
+        window.location.href = "./views/Login.html";
+    }, 1250);
+}
 
 
 

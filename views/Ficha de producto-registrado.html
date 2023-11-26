@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda en Línea</title>
-    <link rel="stylesheet" href="./CSS/estilos-generales.css">
+    <link rel="stylesheet" href="../static/CSS/estilos-generales.css">
 </head>
 
 <body onload="showDefaultLargeImage()">
@@ -13,11 +13,13 @@
         <h1 id="Abrirmenu">Rogfed</h1>
         <nav class="megamenu">
             <ul>
-                <li><a href="./Index.html">Inicio</a></li>
-                <li><a href="./Sobre Nosotros.html">Sobre nosotros</a></li>
-                <li><a href="./Ficha de Producto.html">Ficha de producto</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
-                <li><a href="./Login.html">Login</a></li>
+                <li><a href="./Index-registrado.html">Inicio</a></li>
+                <li><a href="./Sobre Nosotros-registrado.html">Sobre nosotros</a></li>
+                <li><a href="./Ficha de producto-registrado.html">Ficha de producto</a></li>
+                <li><a href="./Contacto-registrado.html">Contacto</a></li>
+                <li>Usuario</li>
+                <li id="prueba"><img src="../static/img/usuario.png" alt="" id="logo-user"></li>
+                <li id="cerrar-sesion"><a href="../Index.html" id="enlace2">Cerrar sesión</a></li>
             </ul>
         </nav>
     </header>
@@ -49,27 +51,27 @@
             <div class="container-imagenes">
                 <div class="image-list">
                     <div id="image-container-1" onmouseover="showLargeImage(1, 0, 0, 2)" onmouseout="hideLargeImage(1)">
-                        <img src="./img/Vista-Frontal.png" alt="Imagen 1" class="original-image">
+                        <img src="../static/img/Vista-Frontal.png" alt="Imagen 1" class="original-image">
                         <div id="large-image-container-1" class="large-image-container">
-                            <img src="./img/Vista-Frontal.png" alt="Imagen grande 1" class="large-image">
+                            <img src="../static/img/Vista-Frontal.png" alt="Imagen grande 1" class="large-image">
                         </div>
                     </div>
                     <div id="image-container-2" onmouseover="showLargeImage(2, 0, 0, 2)" onmouseout="hideLargeImage(2)">
-                        <img src="./img/Vista-Frontal-2.png" alt="Imagen 2" class="original-image">
+                        <img src="../static/img/Vista-Frontal-2.png" alt="Imagen 2" class="original-image">
                         <div id="large-image-container-2" class="large-image-container">
-                            <img src="./img/Vista-Frontal-2.png" alt="Imagen grande 2" class="large-image">
+                            <img src="../static/img/Vista-Frontal-2.png" alt="Imagen grande 2" class="large-image">
                         </div>
                     </div>
                     <div id="image-container-3" onmouseover="showLargeImage(3, 0, 0, 2)" onmouseout="hideLargeImage(3)">
-                        <img src="./img/Vista-Lateral.png" alt="Imagen 3" class="original-image">
+                        <img src="../static/img/Vista-Lateral.png" alt="Imagen 3" class="original-image">
                         <div id="large-image-container-3" class="large-image-container">
-                            <img src="./img/Vista-Lateral.png" alt="Imagen grande 3" class="large-image">
+                            <img src="../static/img/Vista-Lateral.png" alt="Imagen grande 3" class="large-image">
                         </div>
                     </div>
                     <div id="image-container-4" onmouseover="showLargeImage(4, 0, 0, 2)" onmouseout="hideLargeImage(4)">
-                        <img src="./img/Vista-Trasera.png" alt="Imagen 4" class="original-image">
+                        <img src="../static/img/Vista-Trasera.png" alt="Imagen 4" class="original-image">
                         <div id="large-image-container-4" class="large-image-container">
-                            <img src="./img/Vista-Trasera.png" alt="Imagen grande 4" class="large-image">
+                            <img src="../static/img/Vista-Trasera.png" alt="Imagen grande 4" class="large-image">
                         </div>
                     </div>
                 </div>
@@ -104,13 +106,13 @@
                     </div>
                     <div class="rating-box">
                         <p class="rating-text">Vicente Fernandez Barrionuevo</p>
-                        <p>Gran portátil, lo compré para mi hija que lo utiliza para animación 3D y le va perfecto.
+                        <p class="opinas">Gran portátil, lo compré para mi hija que lo utiliza para animación 3D y le va perfecto.
                             Estéticamente es muy chulo.</p>
                         <div class="stars">★★★★☆</div>
                     </div>
                     <div class="rating-box">
                         <p class="rating-text">Celia Fuertes Sanchidrian</p>
-                        <p>Ordenador para gaming, buena relación calidad-precio, teclado cómodo... En general buen
+                        <p class="opinas">Ordenador para gaming, buena relación calidad-precio, teclado cómodo... En general buen
                             portátil</p>
                         <div class="stars">★★★☆☆</div>
                     </div>
@@ -122,7 +124,7 @@
     <footer>
         <p>2023 &copy; Rogfed</p>
     </footer>
-    <script src="./JS/JS.js"></script>
+    <script src="../static/JS/JS.js"></script>
 </body>
 
 </html>

@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda en Línea</title>
-    <link rel="stylesheet" href="./CSS/estilos-menu.css">
-    <link rel="stylesheet" href="./CSS/estilos-generales.css">
-    <link rel="stylesheet" href="./CSS/Footer.css">
+    <link rel="stylesheet" href="./static/CSS/estilos-generales.css">
 </head>
 
 <body>
@@ -16,10 +14,10 @@
         <nav class="megamenu">
             <ul>
                 <li><a href="./Index.html">Inicio</a></li>
-                <li><a href="./Sobre Nosotros.html">Sobre nosotros</a></li>
-                <li><a href="./Ficha de Producto.html">Ficha de producto</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
-                <li><a href="./Login.html">Login</a></li>
+                <li><a href="./views/Sobre Nosotros.html">Sobre nosotros</a></li>
+                <li><a href="./views/Ficha de Producto.html">Ficha de producto</a></li>
+                <li><a href="./views/Contacto.html">Contacto</a></li>
+                <li><a href="./views/Login.html">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -28,35 +26,38 @@
             <div id="imagen">
                 <h1 id="titulo-principal">Bienvenido a nuestra humilde tienda llamada Rogfed</h1>
                 <p id="subtitulo">Rogfed es una pequeña tienda encargada de reparar y reacondicionar dispositivos
-                    informáticos tales como ordenadores,portátiles y dispositivos móviles</p>
+                    informáticos tales como ordenadores,portátiles y dispositivos móviles.Esperamos que tu estancia en esta página sea de tu agrado</p>
             </div>
             <div id="registrate">
                 <div id="Formulario-registro">
-                    <form id="registro">
-                        <h5><a href="./Login.html" id="Enlace-login">Iniciar Sesión</a> </h5>
+                    <form id="registro" onsubmit="return validarFormulario(event)">
+                        <h5><a href="./views/Login.html" id="Enlace-login">Iniciar Sesión</a> </h5>
                         <h3 id="titulo-registrate">Regístrate</h3>
-                        <label for="Nombre" class="espaciado-apartados-registro"></label>
-                        <input type="text" placeholder="Nombre" class="Input-registro" required >
-                        <label for="Apellido"  class="espaciado-apartados-registro"></label>
-                        <input type="text" placeholder="Apellido" class="Input-registro" required>
-                        <label for="Correo-electronico"  class="espaciado-apartados-registro"></label>
-                        <input type="text" placeholder="Correo electronico" class="Input-registro" required>
-                        <label for="Contraseña"  class="espaciado-apartados-registro"></label>
-                        <input type="text" placeholder="Contraseña" class="Input-registro" required>
+                        <label for="Nombre" class="espaciado-apartados-registro">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Nombre" class="Input-registro" required>
+                        
+                        <label for="Apellido" class="espaciado-apartados-registro">Apellido:</label>
+                        <input type="text" id="apellido" placeholder="Apellido" class="Input-registro" required>
+                        
+                        <label for="Correo-electronico" class="espaciado-apartados-registro">Correo electrónico:</label>
+                        <input type="text" id="correo" placeholder="Correo electrónico" class="Input-registro" required>
+                        
+                        <label for="Contraseña" class="espaciado-apartados-registro">Contraseña:</label>
+                        <input type="text" id="contraseña" placeholder="Contraseña" class="Input-registro" required>
                         <p id="letra-pequeña">Esta página está protegida por reCaptcha y está sujeta a la Politica de
                             privacidad y las condiciones del servicio de Google</p>
-                        <div id="Contenedor-inicio">
-                        <input type="checkbox" name="condiciones" id="Condiciones">
+                        <div id="Aceptar-condiciones">
+                        <input type="checkbox" name="condiciones" id="Condiciones" required>
                         <label for="" id="texto-condiciones">Acepto las condiciones de Rogfed</label>
                         </div>
-                        <button type="button" onclick="redireccionar()" id="boton-registro">Registrarse</button>
+                        <button type="submit" id="boton-registro">Registrarse</button>
                     </form>
-                    <p id="cuenta-ya-hecha">Ya tienes una cuenta? <a href="./Login.html">Iniciar Sesión</a></p>
+                    <p id="cuenta-ya-hecha">Ya tienes una cuenta? <a href="./views/Login.html">Iniciar Sesión</a></p>
                 </div>
             </div>
         </div>
     </main>
-    <script src="./JS/JS.js"></script>
+    <script src="./static/JS/JS.js"></script>
 </body>
 
 </html>
