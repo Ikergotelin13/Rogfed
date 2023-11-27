@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogfed</title>
+    <link rel="stylesheet" href="../static/CSS/estilos-generales.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="Abrirmenu">Rogfed</h1>
+        <nav class="megamenu">
+            <ul>
+                <li><a href="../Index.html">Inicio</a></li>
+                <li><a href="./Sobre Nosotros.html">Sobre nosotros</a></li>
+                <li><a href="./Ficha de Producto.html">Ficha de producto</a></li>
+                <li><a href="./Contacto.html">Contacto</a></li>
+                <li><a href="./Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="login-fondo">
+        <div class="containerlogin">
+            <h2>Iniciar sesión</h2>
+            <form id="loginForm">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" required>
+                <br>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+                <div id="Login">
+                <label for="checkbox"></label>
+                    <input type="checkbox" name="" id="Recordar-contraseña">
+                   Recordar Contraseña
+                </div>
+                <button type="submit" id="boton-login">Iniciar sesión</button>
+            </form>
+            <p id="message"></p>
+        </div>
+    </main>
+    <footer id="footerlogin">
+        <p>2023 &copy; Rogfed</p>
+    </footer>
+    <script src="../static/JS/JS.js"></script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Verifica si hay un mensaje en localStorage
+            var mensajeRegistro = localStorage.getItem('mensajeRegistro');
+
+            // Muestra el mensaje
+            if (mensajeRegistro) {
+                // Puedes mostrar el mensaje en algún elemento en tu página
+                document.getElementById('message').textContent = mensajeRegistro;
+
+                // Elimina el mensaje de localStorage para que no se muestre nuevamente en futuras visitas
+                localStorage.removeItem('mensajeRegistro');
+            }
+        });
+    </script>
+</body>
+
+</html>
