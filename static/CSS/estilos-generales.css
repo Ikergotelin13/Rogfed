@@ -15,6 +15,10 @@ h5 {
   text-align: right;
 }
 
+a {
+  text-decoration: none;
+}
+
 label {
   margin-bottom: 5px;
   vertical-align: middle;
@@ -64,7 +68,8 @@ input {
   border-radius: 10px;
 }
 
-.containerlogin input, textarea,
+.containerlogin input,
+textarea,
 .containerlogin textarea {
   padding: 20px;
   margin-bottom: 10px;
@@ -76,7 +81,8 @@ input {
 }
 
 @media only screen and (max-width: 640px) {
-  .containerlogin input, textarea,
+  .containerlogin input,
+  textarea,
   .containerlogin textarea {
     height: 50%;
   }
@@ -162,6 +168,10 @@ header {
   text-align: center;
   margin-bottom: 0;
   cursor: pointer;
+}
+
+#carrito {
+  height: 20px;
 }
 
 nav ul {
@@ -348,6 +358,82 @@ label#texto-condiciones {
     font-size: 70%;
   }
 }
+/*PRODUCTOS*/
+/* Agrega estilos según sea necesario */
+#productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.producto {
+  border: 2px solid #c9c8c8;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: white;
+  height: 300px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input#buscador {
+  height: 10%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos generales según sea necesario */
+#filtro-form {
+  margin-top: 20px;
+  display: inline;
+}
+
+#filtro {
+  width: 100%;
+  align-items: center;
+  display: inline;
+}
+
+#productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.producto {
+  border: 2px solid #838383;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+  height: auto;
+}
+
+.imagen-productos {
+  height: 175px;
+  width: 175px;
+}
+
+.stock {
+  color: gray;
+}
+
+.sin-stock {
+  color: red;
+}
+
+.boton-carrito {
+  position: bottom;
+  margin-top: 6%;
+}
+
 /*SOBRE NOSOTROS*/
 /* Estilos para los container*/
 section#sobre-nosotros {
@@ -592,7 +678,7 @@ iframe {
     height: 28%;
     width: 28%;
     padding-right: 19%;
-    padding-top: 2%;
+    padding-top: 1%;
   }
 }
 @media (max-width: 1340px) {
@@ -623,7 +709,7 @@ iframe {
   .large-image {
     height: 27%;
     width: 27%;
-    padding-right: 42%;
+    padding-right: 50%;
     padding-top: 11%;
   }
 }
@@ -697,6 +783,7 @@ iframe {
 
 /*Estilo para el contenedor del precio*/
 .contenedor-precio {
+  display: flex;
   background-color: white;
   text-align: left;
   margin-left: 6%;
@@ -704,6 +791,13 @@ iframe {
   height: 50px;
   font-size: 200%;
   border-radius: 15px;
+}
+
+#boton-añadir-carrito {
+  margin-left: -75%;
+  margin-top: 1%;
+  padding: 5px;
+  font-size: 110%;
 }
 
 @media only screen and (max-width: 640px) {
@@ -920,7 +1014,7 @@ p#precio {
 
 .container-contacto button {
   padding: 10px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: #fff;
   cursor: pointer;
   width: 90%;
@@ -983,14 +1077,15 @@ p#precio {
     margin-bottom: 44%;
   }
 }
-.loginForm, form {
+.loginForm,
+form {
   display: flex;
   flex-direction: column;
 }
 
 .containerlogin button {
   padding: 10px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -1008,6 +1103,7 @@ p#precio {
 button:hover,
 .containerlogin button:hover {
   background-color: #0056b3;
+  color: black;
 }
 
 .boton-login {
@@ -1088,4 +1184,251 @@ label.espaciado-apartados-registro {
     font-size: 150%;
     padding-top: 2%;
   }
+}
+/*CARRITO*/
+#container-cesta {
+  margin-left: 7%;
+}
+
+#pagina-completa {
+  margin-left: 7%;
+  display: flex;
+  height: 100%;
+}
+
+#producto-agregado {
+  background-color: white;
+  border: 3px solid rgb(204, 204, 204);
+  border-radius: 15px;
+  margin-right: 4%;
+}
+
+#prueba-rendimiento {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*Apartado producto*/
+#container-imagen-pedido {
+  height: 75%;
+}
+
+#imagen-producto-pedido {
+  height: 125px;
+  width: 125px;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+#nombre-producto {
+  width: 45%;
+  margin-left: 2%;
+  margin-top: 2%;
+  font-size: 85%;
+}
+
+#simbolos {
+  height: 10px;
+  width: 10px;
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 12%;
+  margin-top: 1%;
+  background-color: #fff;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  border: solid gray;
+}
+
+#borrar {
+  margin-left: -30%;
+  margin-top: -25%;
+}
+
+#botones {
+  display: flex;
+}
+
+button#restar {
+  height: 25%;
+  width: 55%;
+  margin-top: 12%;
+  margin-right: 15%;
+  margin-left: -100%;
+  background-color: white;
+  border-radius: 4px;
+  border: solid gray;
+}
+
+button#sumar {
+  height: 25%;
+  width: 55%;
+  margin-top: 12%;
+  margin-right: 15%;
+  margin-left: 10%;
+  background-color: white;
+  border-radius: 4px;
+  border: solid gray;
+}
+
+#coste {
+  padding-top: 5%;
+  display: flex;
+  padding-top: 2%;
+}
+
+#precio-rebaja {
+  font-size: 125%;
+  color: red;
+  padding-left: 12%;
+  margin-top: 3%;
+  margin-right: 2%;
+}
+
+#precio-tachado {
+  color: gray;
+}
+
+#stock-disponible {
+  margin-left: -35%;
+  color: gray;
+  margin-top: 0.5%;
+}
+
+#extras-compra {
+  text-align: left;
+  margin-left: 3%;
+  margin-bottom: 3%;
+}
+
+.inputs-garantia {
+  width: 25px;
+  margin-left: 2.8%;
+}
+
+.labels-garantia {
+  margin-top: -3.3%;
+  text-align: left;
+  margin-left: 7%;
+  margin-bottom: 3%;
+}
+
+.radios {
+  margin-right: 0;
+  text-align: left;
+}
+
+.labels-radio {
+  margin-top: -3.3%;
+  text-align: left;
+}
+
+.opciones-garantia {
+  display: inline;
+  text-align: left;
+  margin-left: -3%;
+  margin-bottom: 2%;
+}
+
+#seguir-comprando {
+  width: 20%;
+  margin-left: 72%;
+}
+
+/*Apartado resumen producto*/
+#container-pedido {
+  width: 30%;
+  height: 30%;
+  margin-right: 6%;
+  text-align: center;
+  background-color: white;
+  border: 3px solid rgb(204, 204, 204);
+  border-radius: 15px;
+}
+
+.apartados-resumen {
+  display: flex;
+  padding: 0;
+}
+
+#titulo-cesta {
+  text-align: left;
+}
+
+#subtitulo-cesta {
+  text-align: left;
+}
+
+#pedido {
+  margin-top: 2%;
+  text-align: left;
+  padding-bottom: 5%;
+  margin-left: 12%;
+}
+
+#resumen {
+  color: gray;
+  font-size: 115%;
+  font-style: bold;
+}
+
+#texto-subtotal {
+  margin-right: 35%;
+  font-size: 75%;
+}
+
+#precio-sin-iva {
+  text-align: right;
+  padding-left: 15%;
+  font-size: 75%;
+}
+
+#linea-separadora {
+  margin-top: 1%;
+}
+
+#precio-con-iva {
+  text-align: right;
+  padding-left: 28%;
+}
+
+#realizar-pedido {
+  width: 85%;
+  color: green;
+}
+
+/*Cesta vacia*/
+#cesta-vacia {
+  width: 70%;
+  background-color: white;
+  margin-left: 14%;
+  height: 65vh;
+}
+
+#imagen-lupa-vacia {
+  margin: 5%;
+}
+
+#titulo-cesta-vacia {
+  text-align: left;
+  margin-left: 8%;
+  font-size: 150%;
+}
+
+#subtitulo-cesta-vacia {
+  text-align: left;
+  margin-left: 8%;
+  font-size: 105%;
+}
+
+#regreso-productos {
+  width: 20%;
+  height: 5%;
+  color: lightblue;
+}
+
+#regreso-productos:hover {
+  color: black;
 }/*# sourceMappingURL=estilos-generales.css.map */

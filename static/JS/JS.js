@@ -27,8 +27,8 @@ function validarFormulario(event) {
 }
 
 function redireccionarRegistro() {
-    
-    setTimeout(function() {
+
+    setTimeout(function () {
         window.location.href = "./views/Login.html";
     }, 1250);
 }
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (username === "usuario" && password === "contraseña") {
             message.innerHTML = "Inicio de sesión exitoso!";
 
-            setTimeout(function() {
+            setTimeout(function () {
                 window.location.href = "./Index-registrado.html";
             }, 1250);
         } else {
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /*Mostrar imagen grande*/
 function showDefaultLargeImage() {
-    
+
     showLargeImage(1, 0, 0, 2);
 }
 
@@ -136,5 +136,80 @@ function showLargeImage(imageId, top, left) {
 function hideLargeImage(imageId) {
     const largeImageContainer = document.querySelector(`#large-image-container-${imageId}`);
     largeImageContainer.style.display = 'none';
+}
+
+/*Subir y bajar unidades del producto*/
+var precioUnitario = 729; // Precio de cada artículo
+var numeroArticulos = 1;
+var maxArticulos = 10;
+
+// Función para restar
+function restar() {
+    if (numeroArticulos > 0) {
+        numeroArticulos--;
+        actualizarPrecio();
+    }
+}
+
+// Función para sumar
+function sumar() {
+    if (numeroArticulos < maxArticulos) {
+        numeroArticulos++;
+        actualizarPrecio();
+    } else {
+        alert("El maximo de artículos permitido es 10 ");
+    }
+}
+
+// Función para actualizar el precio en la sección de resumen
+function actualizarPrecio() {
+    var subtotal = precioUnitario * numeroArticulos;
+    document.getElementById('numero').innerText = numeroArticulos;
+    document.getElementById('precio-sin-iva').innerText = subtotal + '€';
+    document.getElementById('precio-con-iva').innerText = subtotal + '€';
+}
+
+
+
+
+function filtrarProductos() {
+    var marcaSeleccionada = obtenerValorSeleccionado("marca");
+    var ramSeleccionada = obtenerValorSeleccionado("ram");
+    var tipoSeleccionado = obtenerValorSeleccionado("tipo");
+    var almacenamientoSeleccionado = obtenerValorSeleccionado("almacenamiento");
+
+    var productos = document.querySelectorAll(".producto");
+
+    productos.forEach(function(producto) {
+        var marcaProducto = producto.getAttribute("data-marca");
+        var ramProducto = parseInt(producto.getAttribute("data-ram"));
+        var tipoProducto = producto.getAttribute("data-tipo");
+        var almacenamientoProducto = parseInt(producto.getAttribute("data-almacenamiento"));
+
+        var cumpleFiltro = true;
+
+        if (marcaSeleccionada !== "todas" && marcaProducto !== marcaSeleccionada) {
+            cumpleFiltro = false;
+        }
+
+        if (ramSeleccionada !== "todas" && ramProducto !== parseInt(ramSeleccionada)) {
+            cumpleFiltro = false;
+        }
+
+        if (tipoSeleccionado !== "todos" && tipoProducto !== tipoSeleccionado) {
+            cumpleFiltro = false;
+        }
+
+        if (almacenamientoSeleccionado !== "todas" && almacenamientoProducto !== parseInt(almacenamientoSeleccionado)) {
+            cumpleFiltro = false;
+        }
+
+        producto.style.display = cumpleFiltro ? "block" : "none";
+    });
+}
+
+function obtenerValorSeleccionado(id) {
+    var elemento = document.getElementById(id);
+    return elemento.options[elemento.selectedIndex].value;
 }
 

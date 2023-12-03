@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Productos</title>
+    <link rel="stylesheet" href="../static/CSS/estilos-generales.css">
+    
+</head>
+<body>
+    <header id="main-header">
+        <h1 id="Abrirmenu">Rogfed</h1>
+        <nav class="megamenu">
+            <ul>
+                <li class="enlaces"><a href="../Index.html">Inicio</a></li>
+                <li class="enlaces"><a href="./Sobre Nosotros.html">Sobre nosotros</a></li>
+                <li class="enlaces"><a href="./Productos.html">Productos</a></li>
+                <li class="enlaces"><a href="./Ficha de Producto.html">Ficha de producto</a></li>
+                <li class="enlaces"><a href="./Contacto.html">Contacto</a></li>
+                <li><a href="./Login.html">Login</a></li>
+                <li><input type="text" id="buscador" placeholder="Buscar productos"></li>
+                <li><a href="./carrito-sin-registrar.html"><img src="../static/img/carrito-de-compras.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <h1>Todos tus dispositivos al mejor precio</h1>
+    <div id="filtro-form">
+        <form id="filtro">
+            <label for="marca">Marca:</label>
+            <select id="marca" name="marca">
+                <option value="todas">Todas</option>
+                <option value="MSI">MSI</option>
+                <option value="Asus">Asus</option>
+                <option value="HP">HP</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="Nitro">Nitro</option>
+                <option value="PcCom">PcCom</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Apple">Apple</option>
+            </select>
+
+            <label for="ram">GB de RAM:</label>
+            <select id="ram" name="ram">
+                <option value="todas">Todas</option>
+                <option value="4">4 GB</option>
+                <option value="8">8 GB</option>
+                <option value="16">16 GB</option>
+                <option value="32">32 GB</option>
+            </select>
+            
+            <label for="almacenamiento">Almacenamiento:</label>
+            <select id="almacenamiento" name="almacenamiento">
+                <option value="todas">Todas</option>
+                <option value="128">128 GB</option>
+                <option value="256">256 GB</option>
+                <option value="512">512 GB</option>
+                <option value="1024">1 TB</option>
+            </select>
+        
+            <label for="tipo">Tipo de dispositivo:</label>
+            <select id="tipo" name="tipo">
+                <option value="todos">Todos</option>
+                <option value="Portatil">Portatil</option>
+                <option value="Sobremesa">Sobremesa</option>
+                <option value="Movil">Movil</option>
+            </select>
+
+            <button type="button" onclick="filtrarProductos()">Filtrar</button>
+        </form>
+    </div>
+    
+<div id="productos">
+    <div class="producto" data-marca="MSI" data-ram="32"  data-almacenamiento="1024" data-tipo="Portatil">
+        <img src="../static/img/Vista-Frontal.png" alt="Producto 1" class="imagen-productos">
+        <h3>Portatil</h3>
+        <p>MSI Pulse 17 B13VFK-687XES Intel Core i7-13700H/32GB/1TB SSD/RTX 4060/17.3"Stock: <p class="stock">5 unidades</p></p>
+        <button onclick="añadirAlCarrito(1)">Añadir al carrito</button>
+    </div>
+
+    <div class="producto" data-marca="PcCom" data-ram="16" data-almacenamiento="1024" data-tipo="Ordenador">
+        <img src="../static/img/Ordenador.png" alt="Producto 2" class="imagen-productos">
+        <h3>Ordenador</h3>
+        <p>PcCom Ready Intel Core i5-12400F / 16GB / 1TB SSD / RTX 4060 <p class="stock">Stock: 3 unidades</p> </p>
+        <button onclick="añadirAlCarrito(2)">Añadir al carrito</button>
+    </div>
+    <div class="producto" data-marca="Nitro" data-ram="16" data-almacenamiento="1024" data-tipo="Ordenador">
+        <img src="../static/img/Ordenador-3.png" alt="Producto 2" class="imagen-productos">
+        <h3>Ordenador</h3>
+        <p>NitroPC Avanzado Gold Plus AMD Ryzen 5 5500/16GB/1TB SSD/RTX 3050 <p class="stock"> Stock: 25 unidades</p></p>
+        <button onclick="añadirAlCarrito(2)">Añadir al carrito</button>
+    </div>
+    <div class="producto" data-marca="Asus" data-ram="8" data-almacenamiento="512" data-tipo="Portatil">
+        <img src="../static/img/Portatil-2.png" alt="Producto 2" class="imagen-productos">
+        <h3>Portatil</h3>
+        <p>ASUS Vivobook Go E1504FA-NJ640 AMD Ryzen 5 7520U/8GB/512GB SSD/Radeon 610M/15.6"<p class="stock"> Stock:  33 unidades</p></p>
+        <button onclick="añadirAlCarrito(2)">Añadir al carrito</button>
+    </div>
+    <div class="producto" data-marca="MSI" data-ram="16" data-almacenamiento="1024" data-tipo="Portatil">
+        <img src="../static/img/Portatil-3.png" alt="Producto 2" class="imagen-productos">
+        <h3>Portatil</h3>
+        <p>MSI Modern 15 B13M-281XES Intel Core i7-1355U/16GB/1TB SSD/15.6"<p class="stock">Stock: 52 unidades</p> </p>
+        <button onclick="añadirAlCarrito(2)">Añadir al carrito</button>
+    </div>
+    <div class="producto" data-marca="MSI" data-ram="16" data-almacenamiento="1024" data-tipo="Ordenador">
+        <img src="../static/img/Ordenador-2.png" alt="Producto 2" class="imagen-productos">
+        <h3>Ordenador</h3>
+        <p>MSI MAG Infinite S3 13NUC5-1212XES i7-13700F/16GB/1TB SSD/RTX 4060<p class="stock"> Stock: 10 unidades</p></p>
+        <button onclick="añadirAlCarrito(2)">Añadir al carrito</button>
+    </div>
+    <div class="producto" data-marca="Lenovo" data-ram="16" data-almacenamiento="128" data-tipo="Tablet">
+        <img src="../static/img/Tablet.png" alt="Producto 2" class="imagen-productos">
+        <h3>Tablet</h3>
+        <p>Lenovo Tab M10 Plus Gen 3 2023 10.61" 2K 4/128GB Gris<p class="stock"> Stock: 50 unidades</p></p>
+        <button onclick="añadirAlCarrito(2)">Añadir al carrito</button>
+    </div>
+    <div class="producto" data-marca="Samsung" data-ram="16" data-almacenamiento="512" data-tipo="Tablet">
+        <img src="../static/img/Tablet-2.png" alt="Producto 2" class="imagen-productos">
+        <h3>Tablet</h3>
+        <p>Samsung Galaxy Tab S9 Plus WiFi 12/512GB Gris + Cargador 25W<p class="stock"> Stock: 25 unidades</p></p>
+        <button onclick="añadirAlCarrito(2)">Añadir al carrito</button>
+    </div>
+    <div class="producto" data-marca="ASUS" data-ram="32" data-almacenamiento="1024" data-tipo="Ordenador">
+        <img src="../static/img/Ordenador-4.png" alt="Producto 2" class="imagen-productos"> 
+        <h3>Ordenador</h3>
+        <p>ASUS ROG G16CH-1370KF0080 Intel Core i7-13700KF/32GB/1TB SSD/RTX 4080<p class="sin-stock"><s> Stock: Sin stock</s></p></p>
+        <button onclick="añadirAlCarrito(2)">Añadir al carrito</button>
+    </div>
+    <div class="producto" data-marca="Apple" data-ram="16" data-almacenamiento="256" data-tipo="Movil">
+        <img src="../static/img/Movil.png" alt="Producto 2" class="imagen-productos">
+        <h3>Movil</h3>
+        <p>Apple iPhone 13 256GB Verde Alpino Libre<p class="stock"> Stock: 8 unidades</p></p>
+        <button onclick="añadirAlCarrito(2)">Añadir al carrito</button>
+    </div>
+    <!-- Agrega más productos según sea necesario -->
+</div>
+</main>
+<footer>
+    <p>2023 &copy; Rogfed</p>
+</footer>
+<script src="../static/JS/JS.js"></script>
+
+
+</body>
+</html>

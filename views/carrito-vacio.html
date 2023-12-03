@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="../static/CSS/estilos-generales.css">
 </head>
 
-<body>
+<body id="completo">
     <header id="main-header">
         <h1 id="Abrirmenu">Rogfed</h1>
         <nav class="megamenu">
             <ul>
                 <li class="enlaces"><a href="./Index-registrado.html">Inicio</a></li>
                 <li class="enlaces"><a href="./Sobre Nosotros-registrado.html">Sobre nosotros</a></li>
-                <li class="enlaces"><a href="./productos-registrado.html">Productos</a></li>
+                <li class="enlaces"><a href="./Productos.html">Productos</a></li>
                 <li class="enlaces"><a href="./Ficha de producto-registrado.html">Ficha de producto</a></li>
                 <li class="enlaces"><a href="./Contacto-registrado.html">Contacto</a></li>
                 <li class="enlaces">Usuario</li>
@@ -25,19 +25,22 @@
             </ul>
         </nav>
     </header>
-    <main id="main-inicio">
-        <div id="container-inicio">
-            <div id="imagen">
-                <h1 id="titulo-principal-registrado">Bienvenido a nuestra humilde tienda llamada Rogfed</h1>
-                <p id="subtitulo-registrado">Rogfed es una pequeña tienda encargada de reparar y reacondicionar dispositivos
-                    informáticos tales como ordenadores,portátiles y dispositivos móviles</p>
-                   
-            </div>
-           
+    <main>
+        <div id="container-cesta">
+            <h3 id="titulo-cesta-vacia">Mi cesta</h3>
+            <p id="subtitulo-cesta-vacia">0 artículos</p>
+        </div>
 
-            
+        <div id="cesta-vacia">
+            <img src="../static/img/lupa-vacio.PNG" alt="" id="imagen-lupa-vacia">
+            <p><strong>Tu cesta está vacia</strong></p>
+            <p>Los productos que vaya añadiendo se irán colocando aquí</p>
+            <button id="regreso-productos"><a href="../views/Ficha de producto-registrado.html" id="boton-regreso-productos">Regresar a los productos</a></button>
         </div>
     </main>
+    <footer>
+        <p>2023 &copy; Rogfed</p>
+    </footer>
     <script src="../static/JS/JS.js"></script>
 </body>
 

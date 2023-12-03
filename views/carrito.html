@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogfed</title>
+    <link rel="stylesheet" href="../static/CSS/estilos-generales.css">
+</head>
+
+<body id="completo">
+    <header id="main-header">
+        <h1 id="Abrirmenu">Rogfed</h1>
+        <nav class="megamenu">
+            <ul>
+                <li class="enlaces"><a href="./Index-registrado.html">Inicio</a></li>
+                <li class="enlaces"><a href="./Sobre Nosotros-registrado.html">Sobre nosotros</a></li>
+                <li class="enlaces"><a href="./Productos.html">Productos</a></li>
+                <li class="enlaces"><a href="./Ficha de producto-registrado.html">Ficha de producto</a></li>
+                <li class="enlaces"><a href="./Contacto-registrado.html">Contacto</a></li>
+                <li class="enlaces">Usuario</li>
+                <li id="prueba"><img src="../static/img/usuario.png" alt="" id="logo-user"></li>
+                <li id="cerrar-sesion" class="enlaces"><a href="../Index.html">Cerrar sesión</a></li>
+                <li><a href="./carrito-sin-registrar.html"><img src="../static/img/carrito-de-compras.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="container-cesta">
+            <h3 id="titulo-cesta">Mi cesta</h3>
+            <p id="subtitulo-cesta">1 artículo</p>
+        </div>
+
+        <div id="pagina-completa">
+            <div id="producto-agregado">
+                <div id="prueba-rendimiento">
+                    <div id="container-imagen-pedido"><img src="../static/img/Vista-Frontal.png" alt=""
+                            id="imagen-producto-pedido"></div>
+                    <div id="nombre-producto"><strong>MSI Cyborg 15 A12VF-098XES Intel Core i5-12450H/16GB/1TB SSD/RTX
+                            4060/15.6"/</strong>
+                        <div id="coste">
+                            <p id="precio-rebaja">899,00€ </p>
+                            <p id="precio-tachado"><s>1098,99€</s></p>
+                        </div>
+                        <div>
+                            <p id="stock-disponible">25 en stock disponible</p>
+                        </div>
+                    </div>
+                    <div id="simbolos"><a href="../views/carrito-vacio.html"><img
+                                src="../static/img/tacho-de-reciclaje.png" alt="" id="borrar"></a>
+                    </div>
+                    <div id="botones">
+                        <button onclick="restar()" id="restar">-</button>
+                        <p id="numero">1</p>
+                        <button onclick="sumar()" id="sumar">+</button>
+                    </div>
+                </div>
+                <div id="Servicios-de-garantia">
+                    <div id="extras-compra">
+                        <p><strong>Servicios disponibles</strong> </p>
+                        <p>Equipo y sistema operativo se venden por separado.</p>
+                        <p>Configuración e instalacion de informática a domicilio <strong> desde + 35€</strong></p>
+                    </div>
+                    <form action="">
+                        <input type="checkbox" class="inputs-garantia">
+                        <label for="" class="labels-garantia">Amplía tu garantía con PcCare <strong> desde
+                                45€</strong></label>
+                        <div class="opciones-garantia">
+                            <input type="radio" class="radios" name="opcion-garantia">
+                            <label for="" class="labels-radio"> 1 año</label>
+                            <input type="radio" class="radios" name="opcion-garantia">
+                            <label for="" class="labels-radio"> 2 años</label>
+                        </div>
+                        <input type="checkbox" class="inputs-garantia">
+                        <label for="" class="labels-garantia">Protégelo frente a daños con PcCare <strong>desde
+                                38€</strong></label>
+                        <div class="opciones-garantia">
+                            <input type="radio" class="radios" name="opcion-daños">
+                            <label for="" class="labels-radio"> 1 año</label>
+                            <input type="radio" class="radios" name="opcion-daños">
+                            <label for="" class="labels-radio"> 2 años</label>
+                            <input type="radio" class="radios" name="opcion-daños">
+                            <label for="" class="labels-radio"> 3 años</label>
+                        </div>
+                        <input type="checkbox" class="inputs-garantia">
+                        <label for="" class="labels-garantia">Protégelo frente a daños 4 años y amplía 1 año la garantía<strong>desde 146€</strong></label>
+                        <input type="checkbox" class="inputs-garantia">
+                        <label for="" class="labels-garantia">Asistencia remota ilimitada para 1 dispositivo<strong> por+29€</strong></label>
+                        <button id="seguir-comprando"><a href="./Ficha de producto-registrado.html">Seguir comprando</a> </button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="container-pedido">
+                <div id="pedido">
+                    <p id="resumen"><strong> Resumen</strong></p>
+                    <div class="apartados-resumen">
+                        <p id="texto-subtotal">Subtotal artículos</p>
+                        <p id="precio-sin-iva">729€</p>
+                    </div>
+                    <div>
+                        <p id="linea-separadora">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
+                    </div>
+                    <div class="apartados-resumen">
+                        <p id="texto-total-impuestos">Total (Impuestos incluidos)</p>
+                        <p id="precio-con-iva">729€</p>
+                    </div>
+                    <div><button id="realizar-pedido">Realizar pedido</button></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2023 &copy; Rogfed</p>
+    </footer>
+    <script src="../static/JS/JS.js"></script>
+</body>
+
+</html>
