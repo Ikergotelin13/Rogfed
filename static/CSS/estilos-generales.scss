@@ -169,7 +169,6 @@ footer {
   margin-right: 30%;
   font-size: 125%;
   color: #bfdaf3;
-  margin-bottom: 50%;
 }
 /* Estilos para el menú de navegación */
 header {
@@ -216,6 +215,17 @@ nav ul li {
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
+}
+
+div#opiniones-clientes-inicio {
+  text-align: left;
+ margin-top: 50px;
+}
+
+#titulo-que-opinan{
+  margin-left: 10%;
+  color: #000;
+  font-size: 125%;
 }
 
 /*Estilo formulario de registro*/
@@ -1505,3 +1515,20 @@ button#sumar {
 }
 
 
+/*CONDICIONES*/
+#container-condiciones{
+  color: rgb(0, 0, 0);
+  
+}
+
+.texto-largo-condiciones{
+  margin: 20px 8% 20px 8%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 105%;
+}
+
+.texto-envios{
+  margin: 20px 8% 20px 8%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 105%;
+}
